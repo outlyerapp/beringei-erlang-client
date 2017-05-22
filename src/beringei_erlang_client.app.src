@@ -1,0 +1,12 @@
+{application, beringei_erlang_client,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { beringei_erlang_client_app, []}},
+  {env, []}
+ ]}.
