@@ -9,11 +9,13 @@
 -type tclient() :: #tclient{}.
 
 connect(Host, Port) ->
-    {ok, Client} = thrift_client_util:new(Host, Port, beringei_service_thrift, []),
+    Service = beringei_service_thrift,
+    {ok, Client} = thrift_client_util:new(Host, Port, Service, []),
     Client.
 
-put_data_points(Client, DataPoints) ->
-    {Client1, {ok, Response}} = thrift_client:call(Client, [DataPoints]),
+put_data_points(Client, Request) ->
+    Fn = putDataPoints,
+    {Client1, {ok, Response}} = thrift_client:call(Client, Fn, [Request]),
     {Client1, Response}.
 
 -spec close(tclient()) -> ok.

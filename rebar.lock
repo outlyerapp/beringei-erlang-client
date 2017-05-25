@@ -1,8 +1,10 @@
-[{<<"jsx">>,
-  {git,"git://github.com/talentdeficit/jsx.git",
-       {ref,"352d6b21cbec4fe1b66bc7ce3ded67a3b32add2c"}},
-  1},
+{"1.1.0",
+[{<<"recon">>,{pkg,<<"recon">>,<<"2.3.2">>},0},
  {<<"thrift">>,
-  {git,"https://github.com/j14159/thrift",
-       {ref,"bb48d5fbec5cc9240df6c1261f603b1a4d14cf0f"}},
-  0}].
+  {git,"https://github.com/davecromberge/thrift",
+       {ref,"4880a0fe42f9852d8d749bd0441607cf0ca6f79e"}},
+  0}]}.
+[
+{pkg_hash,[
+ {<<"recon">>, <<"4444C879BE323B1B133EEC5241CB84BD3821EA194C740D75617E106BE4744318">>}]}
+].
